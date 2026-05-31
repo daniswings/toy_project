@@ -122,6 +122,8 @@ import os
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+STATIC_ROOT = BASE_DIR / "staticfiles"  # 로컬용 경로
+
 AUTH_USER_MODEL = 'users.User'
 
 LOGIN_URL = '/users/login/'
