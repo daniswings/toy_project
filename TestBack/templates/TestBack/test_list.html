@@ -220,7 +220,7 @@
                 </div>
             {% endif %}
             
-            {% if page_obj.paginator.num_pages > 1 %}
+            {% if page_obj.paginator.num_pages >= 1 %}
             <div class="pagination">
     
                 {% if page_obj.has_previous %}
